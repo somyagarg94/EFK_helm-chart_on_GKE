@@ -1,0 +1,24 @@
+dependencies:
+- condition: ""
+  enabled: false
+  import-values: null
+  name: elasticsearch
+  repository: http://127.0.0.1:8879
+  tags: null
+  version: 0.1.0
+- condition: ""
+  enabled: false
+  import-values: null
+  name: kibana
+  repository: http://127.0.0.1:8879
+  tags: null
+  version: 0.1.0
+- condition: ""
+  enabled: false
+  import-values: null
+  name: fluentd
+  repository: http://127.0.0.1:8879
+  tags: null
+  version: 0.1.0
+digest: sha256:15555eda3b8f618a5fda22c1446bb01f385cc2d17d5d7ab1eb11b9c220a9b9c7
+generated: 2017-08-02T18:28:37.189021831Z

@@ -1,0 +1,9 @@
+apiVersion: v1
+description: Centralized logging based on Elasticsearch, Fluentd and Kibana.
+maintainers:
+- email: abrand@apprenda.com
+  name: Alexander Brand
+- email: dkoshkin@apprenda.com
+  name: Dimitri Koshkin
+name: efk
+version: 0.1.0

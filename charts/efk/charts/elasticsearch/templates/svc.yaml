@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.serviceName | default (include "elasticsearch.service.fullname" .) }}
+  labels:
+    app: {{ template "elasticsearch.name" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    component: "elasticsearch"
+    heritage: {{ .Release.Service | quote }}
+    release: {{ .Release.Name | quote }}
+    role: client
+spec:
+  type: {{ .Values.serviceType }}
+  selector:
+    app: {{ template "elasticsearch.name" . }}
+    component: "elasticsearch"
+    release: {{ .Release.Name | quote }}
+    role: client
+  ports:
+  - name: http
+    port: 9200
+    protocol: TCP

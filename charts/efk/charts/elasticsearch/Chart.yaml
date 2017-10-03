@@ -1,0 +1,10 @@
+apiVersion: v1
+description: Elasticsearch is a distributed, RESTful search and analytics engine capable
+  of solving a growing number of use cases.
+maintainers:
+- email: abrand@apprenda.com
+  name: Alexander Brand
+- email: dkoshkin@apprenda.com
+  name: Dimitri Koshkin
+name: elasticsearch
+version: 0.1.0
